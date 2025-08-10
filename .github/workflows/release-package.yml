@@ -26,6 +26,15 @@ jobs:
         with:
           node-version: 20
           registry-url: https://npm.pkg.github.com/
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      # (Optional) Verify Java setup
+      - run: java -version
+      - run: ./gradlew --version || true
+
       - run: npm ci
       - run: npm install
       - run: npm run verify:android && npm run verify:web
