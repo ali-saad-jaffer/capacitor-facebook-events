@@ -1,6 +1,6 @@
 {
-  "name": "@ali-saad-jaffer/capacitor-facebook-events",
-  "version": "7.0.0",
+  "name": "capacitor-facebook-events",
+  "version": "7.0.1",
   "description": "Facebook events tracking in Capacitor applications",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
